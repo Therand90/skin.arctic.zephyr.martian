@@ -1934,7 +1934,7 @@
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,6,Home)</onclick>
-            <onclick>SetFocus(11001)</onclick>
+            <onclick>SetFocus(51101)</onclick>
             <animation effect="fade" start="100" end="50" time="0" condition="!String.IsEqual(Container(211).ListItem.Property(widgetEnable.6),yes)">Conditional</animation>
             <visible>String.IsEmpty(Window(Home).Property(skinshortcuts-Widget))</visible>
             <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -1950,7 +1950,7 @@
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,7,Home)</onclick>
-            <onclick>SetFocus(7001)</onclick>
+            <onclick>SetFocus(50701)</onclick>
             <animation effect="fade" start="100" end="50" time="0" condition="!String.IsEqual(Container(211).ListItem.Property(widgetEnable.7),yes)">Conditional</animation>
             <visible>String.IsEmpty(Window(Home).Property(skinshortcuts-Widget))</visible>
             <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -1966,7 +1966,7 @@
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,8,Home)</onclick>
-            <onclick>SetFocus(8001)</onclick>
+            <onclick>SetFocus(50801)</onclick>
             <animation effect="fade" start="100" end="50" time="0" condition="!String.IsEqual(Container(211).ListItem.Property(widgetEnable.8),yes)">Conditional</animation>
             <visible>String.IsEmpty(Window(Home).Property(skinshortcuts-Widget))</visible>
             <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -1982,7 +1982,7 @@
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,9,Home)</onclick>
-            <onclick>SetFocus(9001)</onclick>
+            <onclick>SetFocus(50901)</onclick>
             <animation effect="fade" start="100" end="50" time="0" condition="!String.IsEqual(Container(211).ListItem.Property(widgetEnable.9),yes)">Conditional</animation>
             <visible>String.IsEmpty(Window(Home).Property(skinshortcuts-Widget))</visible>
             <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -1998,7 +1998,7 @@
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,10,Home)</onclick>
-            <onclick>SetFocus(10001)</onclick>
+            <onclick>SetFocus(51001)</onclick>
             <animation effect="fade" start="100" end="50" time="0" condition="!String.IsEqual(Container(211).ListItem.Property(widgetEnable.10),yes)">Conditional</animation>
             <visible>String.IsEmpty(Window(Home).Property(skinshortcuts-Widget))</visible>
             <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -2014,7 +2014,7 @@
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,11,Home)</onclick>
-            <onclick>SetFocus(11001)</onclick>
+            <onclick>SetFocus(51101)</onclick>
             <animation effect="fade" start="100" end="50" time="0" condition="!String.IsEqual(Container(211).ListItem.Property(widgetEnable.11),yes)">Conditional</animation>
             <visible>String.IsEmpty(Window(Home).Property(skinshortcuts-Widget))</visible>
             <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -2030,7 +2030,7 @@
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,12,Home)</onclick>
-            <onclick>SetFocus(12001)</onclick>
+            <onclick>SetFocus(51201)</onclick>
             <animation effect="fade" start="100" end="50" time="0" condition="!String.IsEqual(Container(211).ListItem.Property(widgetEnable.12),yes)">Conditional</animation>
             <visible>String.IsEmpty(Window(Home).Property(skinshortcuts-Widget))</visible>
             <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -2046,7 +2046,7 @@
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,13,Home)</onclick>
-            <onclick>SetFocus(13001)</onclick>
+            <onclick>SetFocus(51301)</onclick>
             <animation effect="fade" start="100" end="50" time="0" condition="!String.IsEqual(Container(211).ListItem.Property(widgetEnable.13),yes)">Conditional</animation>
             <visible>String.IsEmpty(Window(Home).Property(skinshortcuts-Widget))</visible>
             <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -2062,7 +2062,7 @@
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,14,Home)</onclick>
-            <onclick>SetFocus(14001)</onclick>
+            <onclick>SetFocus(51401)</onclick>
             <animation effect="fade" start="100" end="50" time="0" condition="!String.IsEqual(Container(211).ListItem.Property(widgetEnable.14),yes)">Conditional</animation>
             <visible>String.IsEmpty(Window(Home).Property(skinshortcuts-Widget))</visible>
             <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -2078,7 +2078,7 @@
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,15,Home)</onclick>
-            <onclick>SetFocus(15001)</onclick>
+            <onclick>SetFocus(51501)</onclick>
             <animation effect="fade" start="100" end="50" time="0" condition="!String.IsEqual(Container(211).ListItem.Property(widgetEnable.15),yes)">Conditional</animation>
             <visible>String.IsEmpty(Window(Home).Property(skinshortcuts-Widget))</visible>
             <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -2094,7 +2094,7 @@
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,16,Home)</onclick>
-            <onclick>SetFocus(16001)</onclick>
+            <onclick>SetFocus(51601)</onclick>
             <animation effect="fade" start="100" end="50" time="0" condition="!String.IsEqual(Container(211).ListItem.Property(widgetEnable.16),yes)">Conditional</animation>
             <visible>String.IsEmpty(Window(Home).Property(skinshortcuts-Widget))</visible>
             <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -2110,7 +2110,7 @@
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,17,Home)</onclick>
-            <onclick>SetFocus(17001)</onclick>
+            <onclick>SetFocus(51701)</onclick>
             <animation effect="fade" start="100" end="50" time="0" condition="!String.IsEqual(Container(211).ListItem.Property(widgetEnable.17),yes)">Conditional</animation>
             <visible>String.IsEmpty(Window(Home).Property(skinshortcuts-Widget))</visible>
             <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -2126,7 +2126,7 @@
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,18,Home)</onclick>
-            <onclick>SetFocus(18001)</onclick>
+            <onclick>SetFocus(51801)</onclick>
             <animation effect="fade" start="100" end="50" time="0" condition="!String.IsEqual(Container(211).ListItem.Property(widgetEnable.18),yes)">Conditional</animation>
             <visible>String.IsEmpty(Window(Home).Property(skinshortcuts-Widget))</visible>
             <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -2142,7 +2142,7 @@
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,19,Home)</onclick>
-            <onclick>SetFocus(19001)</onclick>
+            <onclick>SetFocus(51901)</onclick>
             <animation effect="fade" start="100" end="50" time="0" condition="!String.IsEqual(Container(211).ListItem.Property(widgetEnable.19),yes)">Conditional</animation>
             <visible>String.IsEmpty(Window(Home).Property(skinshortcuts-Widget))</visible>
             <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -2158,7 +2158,7 @@
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,20,Home)</onclick>
-            <onclick>SetFocus(20001)</onclick>
+            <onclick>SetFocus(52001)</onclick>
             <animation effect="fade" start="100" end="50" time="0" condition="!String.IsEqual(Container(211).ListItem.Property(widgetEnable.20),yes)">Conditional</animation>
             <visible>String.IsEmpty(Window(Home).Property(skinshortcuts-Widget))</visible>
             <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -2174,7 +2174,7 @@
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,21,Home)</onclick>
-            <onclick>SetFocus(21001)</onclick>
+            <onclick>SetFocus(52101)</onclick>
             <animation effect="fade" start="100" end="50" time="0" condition="!String.IsEqual(Container(211).ListItem.Property(widgetEnable.21),yes)">Conditional</animation>
             <visible>String.IsEmpty(Window(Home).Property(skinshortcuts-Widget))</visible>
             <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -2190,7 +2190,7 @@
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,22,Home)</onclick>
-            <onclick>SetFocus(22001)</onclick>
+            <onclick>SetFocus(52201)</onclick>
             <animation effect="fade" start="100" end="50" time="0" condition="!String.IsEqual(Container(211).ListItem.Property(widgetEnable.22),yes)">Conditional</animation>
             <visible>String.IsEmpty(Window(Home).Property(skinshortcuts-Widget))</visible>
             <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -2206,7 +2206,7 @@
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,23,Home)</onclick>
-            <onclick>SetFocus(23001)</onclick>
+            <onclick>SetFocus(52301)</onclick>
             <animation effect="fade" start="100" end="50" time="0" condition="!String.IsEqual(Container(211).ListItem.Property(widgetEnable.23),yes)">Conditional</animation>
             <visible>String.IsEmpty(Window(Home).Property(skinshortcuts-Widget))</visible>
             <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -2222,7 +2222,7 @@
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,24,Home)</onclick>
-            <onclick>SetFocus(24001)</onclick>
+            <onclick>SetFocus(52401)</onclick>
             <animation effect="fade" start="100" end="50" time="0" condition="!String.IsEqual(Container(211).ListItem.Property(widgetEnable.24),yes)">Conditional</animation>
             <visible>String.IsEmpty(Window(Home).Property(skinshortcuts-Widget))</visible>
             <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -2238,7 +2238,7 @@
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,25,Home)</onclick>
-            <onclick>SetFocus(25001)</onclick>
+            <onclick>SetFocus(52501)</onclick>
             <animation effect="fade" start="100" end="50" time="0" condition="!String.IsEqual(Container(211).ListItem.Property(widgetEnable.25),yes)">Conditional</animation>
             <visible>String.IsEmpty(Window(Home).Property(skinshortcuts-Widget))</visible>
             <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>

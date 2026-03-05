@@ -1547,7 +1547,7 @@
 
 
             <!-- Widget 7 -->
-            <control type="grouplist" id="7000">
+            <control type="grouplist" id="50700">
                 <onleft>ClearProperty(skinshortcuts-Widget,Home)</onleft>
                 <onleft>SetFocus(7107)</onleft>
                 <onright>ClearProperty(skinshortcuts-Widget,Home)</onright>
@@ -1563,7 +1563,7 @@
                 <itemgap>3</itemgap>
                 <scrolltime>0</scrolltime>
                 <visible>String.IsEqual(Window(Home).Property(skinshortcuts-Widget),7)</visible>
-                <control type="button" id="7001">
+                <control type="button" id="50701">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -1580,7 +1580,7 @@
                     <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetEnable.7),yes)">SetProperty(customValue,)</onclick>
                     <onclick>SendClick(404)</onclick>
                 </control>
-                <control type="button" id="7002" description="Widget">
+                <control type="button" id="50702" description="Widget">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31266] 7</label>
@@ -1592,7 +1592,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <onclick>SendClick(312)</onclick>
                 </control>
-                <control type="button" id="7003" description="Set Custom">
+                <control type="button" id="50703" description="Set Custom">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31474]</label>
@@ -1606,7 +1606,7 @@
                     <onclick>SetProperty(level,7)</onclick>
                     <onclick>SendClick(405)</onclick>
                 </control>
-                <control type="radiobutton" id="7004" description="Widget Fullscreen">
+                <control type="radiobutton" id="50704" description="Widget Fullscreen">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.7),yes) | Skin.HasSetting(homemenu.netflix)</selected>
                     <width>100%</width>
@@ -1622,7 +1622,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>[ $EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets] ] + !Skin.HasSetting(homemenu.netflix)</enable>
                 </control>
-                <control type="button" id="7005" description="Widget Aspect">
+                <control type="button" id="50705" description="Widget Aspect">
                     <width>100%</width>
                     <height>66</height>
                     <label>31261</label>
@@ -1633,7 +1633,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgettarget.7),system) + !String.IsEqual(Container(211).ListItem.Property(widget.7),epg) + !Skin.HasSetting(homemenu.clean.flix)</enable>
                 </control>
-                <control type="radiobutton" id="7006" description="Widget ClearLogo">
+                <control type="radiobutton" id="50706" description="Widget ClearLogo">
                     <radioposx>845</radioposx>
                     <selected>!String.IsEqual(Container(211).ListItem.Property(widgetClearLogoThumb.7),no)</selected>
                     <width>100%</width>
@@ -1650,7 +1650,7 @@
                     <onclick>SendClick(404)</onclick>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.7),epg)</visible>
                 </control>
-                <control type="button" id="7007" description="Widget Aspect Ratio">
+                <control type="button" id="50707" description="Widget Aspect Ratio">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31401]</label>
@@ -1663,7 +1663,7 @@
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widget.7),mysubmenu)</enable>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.7),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="7008" description="Widget Edge Distance">
+                <control type="button" id="50708" description="Widget Edge Distance">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31453]</label>
@@ -1676,7 +1676,7 @@
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.7),mysubmenu) + !String.Contains(Container(211).ListItem.Property(widget.7),weather) + !String.IsEqual(Container(211).ListItem.Property(widget.7),system)</visible>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.7),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="7009" description="Widget SortBy">
+                <control type="button" id="50709" description="Widget SortBy">
                     <width>100%</width>
                     <height>66</height>
                     <label>581</label>
@@ -1686,7 +1686,7 @@
                     <align>left</align>
                     <include>DefDialogButtonsGradient</include>
                 </control>
-                <control type="button" id="7010">
+                <control type="button" id="50710">
                     <description>Change widget 1 sort order</description>
                     <width>100%</width>
                     <height>66</height>
@@ -1697,7 +1697,7 @@
                     <label>580</label>
                     <label2>$VAR[LabelSort7]</label2>
                 </control>
-                <control type="button" id="7011">
+                <control type="button" id="50711">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -1710,7 +1710,7 @@
                     <label2>$VAR[AutoScrollTime7]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
                 </control>
-                <control type="button" id="43007" description="ListType">
+                <control type="button" id="50712" description="ListType">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31341]</label>
@@ -1720,7 +1720,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu) + !$EXP[HomeIsCleanMinimal] + !$EXP[HomeIsSpotlight]</visible>
                 </control>
-                <control type="radiobutton" id="43107" description="Prevent reload">
+                <control type="radiobutton" id="50713" description="Prevent reload">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetSortby.7),userpreference)</selected>
                     <width>100%</width>
@@ -1740,7 +1740,7 @@
 
 
             <!-- Widget 8 -->
-            <control type="grouplist" id="8000">
+            <control type="grouplist" id="50800">
                 <onleft>ClearProperty(skinshortcuts-Widget,Home)</onleft>
                 <onleft>SetFocus(7108)</onleft>
                 <onright>ClearProperty(skinshortcuts-Widget,Home)</onright>
@@ -1756,7 +1756,7 @@
                 <itemgap>3</itemgap>
                 <scrolltime>0</scrolltime>
                 <visible>String.IsEqual(Window(Home).Property(skinshortcuts-Widget),8)</visible>
-                <control type="button" id="8001">
+                <control type="button" id="50801">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -1773,7 +1773,7 @@
                     <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetEnable.8),yes)">SetProperty(customValue,)</onclick>
                     <onclick>SendClick(404)</onclick>
                 </control>
-                <control type="button" id="8002" description="Widget">
+                <control type="button" id="50802" description="Widget">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31266] 8</label>
@@ -1785,7 +1785,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <onclick>SendClick(312)</onclick>
                 </control>
-                <control type="button" id="8003" description="Set Custom">
+                <control type="button" id="50803" description="Set Custom">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31474]</label>
@@ -1799,7 +1799,7 @@
                     <onclick>SetProperty(level,8)</onclick>
                     <onclick>SendClick(405)</onclick>
                 </control>
-                <control type="radiobutton" id="8004" description="Widget Fullscreen">
+                <control type="radiobutton" id="50804" description="Widget Fullscreen">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.8),yes) | Skin.HasSetting(homemenu.netflix)</selected>
                     <width>100%</width>
@@ -1815,7 +1815,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>[ $EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets] ] + !Skin.HasSetting(homemenu.netflix)</enable>
                 </control>
-                <control type="button" id="8005" description="Widget Aspect">
+                <control type="button" id="50805" description="Widget Aspect">
                     <width>100%</width>
                     <height>66</height>
                     <label>31261</label>
@@ -1826,7 +1826,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgettarget.8),system) + !String.IsEqual(Container(211).ListItem.Property(widget.8),epg) + !Skin.HasSetting(homemenu.clean.flix)</enable>
                 </control>
-                <control type="radiobutton" id="8006" description="Widget ClearLogo">
+                <control type="radiobutton" id="50806" description="Widget ClearLogo">
                     <radioposx>845</radioposx>
                     <selected>!String.IsEqual(Container(211).ListItem.Property(widgetClearLogoThumb.8),no)</selected>
                     <width>100%</width>
@@ -1843,7 +1843,7 @@
                     <onclick>SendClick(404)</onclick>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.8),epg)</visible>
                 </control>
-                <control type="button" id="8007" description="Widget Aspect Ratio">
+                <control type="button" id="50807" description="Widget Aspect Ratio">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31401]</label>
@@ -1856,7 +1856,7 @@
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widget.8),mysubmenu)</enable>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.8),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="8008" description="Widget Edge Distance">
+                <control type="button" id="50808" description="Widget Edge Distance">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31453]</label>
@@ -1869,7 +1869,7 @@
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.8),mysubmenu) + !String.Contains(Container(211).ListItem.Property(widget.8),weather) + !String.IsEqual(Container(211).ListItem.Property(widget.8),system)</visible>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.8),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="8009" description="Widget SortBy">
+                <control type="button" id="50809" description="Widget SortBy">
                     <width>100%</width>
                     <height>66</height>
                     <label>581</label>
@@ -1879,7 +1879,7 @@
                     <align>left</align>
                     <include>DefDialogButtonsGradient</include>
                 </control>
-                <control type="button" id="8010">
+                <control type="button" id="50810">
                     <description>Change widget 1 sort order</description>
                     <width>100%</width>
                     <height>66</height>
@@ -1890,7 +1890,7 @@
                     <label>580</label>
                     <label2>$VAR[LabelSort8]</label2>
                 </control>
-                <control type="button" id="8011">
+                <control type="button" id="50811">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -1903,7 +1903,7 @@
                     <label2>$VAR[AutoScrollTime8]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
                 </control>
-                <control type="button" id="43008" description="ListType">
+                <control type="button" id="50812" description="ListType">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31341]</label>
@@ -1913,7 +1913,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu) + !$EXP[HomeIsCleanMinimal] + !$EXP[HomeIsSpotlight]</visible>
                 </control>
-                <control type="radiobutton" id="43108" description="Prevent reload">
+                <control type="radiobutton" id="50813" description="Prevent reload">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetSortby.8),userpreference)</selected>
                     <width>100%</width>
@@ -1933,7 +1933,7 @@
 
 
             <!-- Widget 9 -->
-            <control type="grouplist" id="9000">
+            <control type="grouplist" id="50900">
                 <onleft>ClearProperty(skinshortcuts-Widget,Home)</onleft>
                 <onleft>SetFocus(7109)</onleft>
                 <onright>ClearProperty(skinshortcuts-Widget,Home)</onright>
@@ -1949,7 +1949,7 @@
                 <itemgap>3</itemgap>
                 <scrolltime>0</scrolltime>
                 <visible>String.IsEqual(Window(Home).Property(skinshortcuts-Widget),9)</visible>
-                <control type="button" id="9001">
+                <control type="button" id="50901">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -1966,7 +1966,7 @@
                     <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetEnable.9),yes)">SetProperty(customValue,)</onclick>
                     <onclick>SendClick(404)</onclick>
                 </control>
-                <control type="button" id="9002" description="Widget">
+                <control type="button" id="50902" description="Widget">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31266] 9</label>
@@ -1978,7 +1978,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <onclick>SendClick(312)</onclick>
                 </control>
-                <control type="button" id="9003" description="Set Custom">
+                <control type="button" id="50903" description="Set Custom">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31474]</label>
@@ -1992,7 +1992,7 @@
                     <onclick>SetProperty(level,9)</onclick>
                     <onclick>SendClick(405)</onclick>
                 </control>
-                <control type="radiobutton" id="9004" description="Widget Fullscreen">
+                <control type="radiobutton" id="50904" description="Widget Fullscreen">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.9),yes) | Skin.HasSetting(homemenu.netflix)</selected>
                     <width>100%</width>
@@ -2008,7 +2008,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>[ $EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets] ] + !Skin.HasSetting(homemenu.netflix)</enable>
                 </control>
-                <control type="button" id="9005" description="Widget Aspect">
+                <control type="button" id="50905" description="Widget Aspect">
                     <width>100%</width>
                     <height>66</height>
                     <label>31261</label>
@@ -2019,7 +2019,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgettarget.9),system) + !String.IsEqual(Container(211).ListItem.Property(widget.9),epg) + !Skin.HasSetting(homemenu.clean.flix)</enable>
                 </control>
-                <control type="radiobutton" id="9006" description="Widget ClearLogo">
+                <control type="radiobutton" id="50906" description="Widget ClearLogo">
                     <radioposx>845</radioposx>
                     <selected>!String.IsEqual(Container(211).ListItem.Property(widgetClearLogoThumb.9),no)</selected>
                     <width>100%</width>
@@ -2036,7 +2036,7 @@
                     <onclick>SendClick(404)</onclick>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.9),epg)</visible>
                 </control>
-                <control type="button" id="9007" description="Widget Aspect Ratio">
+                <control type="button" id="50907" description="Widget Aspect Ratio">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31401]</label>
@@ -2049,7 +2049,7 @@
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widget.9),mysubmenu)</enable>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.9),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="9008" description="Widget Edge Distance">
+                <control type="button" id="50908" description="Widget Edge Distance">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31453]</label>
@@ -2062,7 +2062,7 @@
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.9),mysubmenu) + !String.Contains(Container(211).ListItem.Property(widget.9),weather) + !String.IsEqual(Container(211).ListItem.Property(widget.9),system)</visible>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.9),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="9009" description="Widget SortBy">
+                <control type="button" id="50909" description="Widget SortBy">
                     <width>100%</width>
                     <height>66</height>
                     <label>581</label>
@@ -2072,7 +2072,7 @@
                     <align>left</align>
                     <include>DefDialogButtonsGradient</include>
                 </control>
-                <control type="button" id="9010">
+                <control type="button" id="50910">
                     <description>Change widget 1 sort order</description>
                     <width>100%</width>
                     <height>66</height>
@@ -2083,7 +2083,7 @@
                     <label>580</label>
                     <label2>$VAR[LabelSort9]</label2>
                 </control>
-                <control type="button" id="9011">
+                <control type="button" id="50911">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -2096,7 +2096,7 @@
                     <label2>$VAR[AutoScrollTime9]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
                 </control>
-                <control type="button" id="43009" description="ListType">
+                <control type="button" id="50912" description="ListType">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31341]</label>
@@ -2106,7 +2106,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu) + !$EXP[HomeIsCleanMinimal] + !$EXP[HomeIsSpotlight]</visible>
                 </control>
-                <control type="radiobutton" id="43109" description="Prevent reload">
+                <control type="radiobutton" id="50913" description="Prevent reload">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetSortby.9),userpreference)</selected>
                     <width>100%</width>
@@ -2126,7 +2126,7 @@
 
 
             <!-- Widget 10 -->
-            <control type="grouplist" id="10000">
+            <control type="grouplist" id="51000">
                 <onleft>ClearProperty(skinshortcuts-Widget,Home)</onleft>
                 <onleft>SetFocus(7110)</onleft>
                 <onright>ClearProperty(skinshortcuts-Widget,Home)</onright>
@@ -2142,7 +2142,7 @@
                 <itemgap>3</itemgap>
                 <scrolltime>0</scrolltime>
                 <visible>String.IsEqual(Window(Home).Property(skinshortcuts-Widget),10)</visible>
-                <control type="button" id="10001">
+                <control type="button" id="51001">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -2159,7 +2159,7 @@
                     <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetEnable.10),yes)">SetProperty(customValue,)</onclick>
                     <onclick>SendClick(404)</onclick>
                 </control>
-                <control type="button" id="10002" description="Widget">
+                <control type="button" id="51002" description="Widget">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31266] 10</label>
@@ -2171,7 +2171,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <onclick>SendClick(312)</onclick>
                 </control>
-                <control type="button" id="10003" description="Set Custom">
+                <control type="button" id="51003" description="Set Custom">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31474]</label>
@@ -2185,7 +2185,7 @@
                     <onclick>SetProperty(level,10)</onclick>
                     <onclick>SendClick(405)</onclick>
                 </control>
-                <control type="radiobutton" id="10004" description="Widget Fullscreen">
+                <control type="radiobutton" id="51004" description="Widget Fullscreen">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.10),yes) | Skin.HasSetting(homemenu.netflix)</selected>
                     <width>100%</width>
@@ -2201,7 +2201,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>[ $EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets] ] + !Skin.HasSetting(homemenu.netflix)</enable>
                 </control>
-                <control type="button" id="10005" description="Widget Aspect">
+                <control type="button" id="51005" description="Widget Aspect">
                     <width>100%</width>
                     <height>66</height>
                     <label>31261</label>
@@ -2212,7 +2212,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgettarget.10),system) + !String.IsEqual(Container(211).ListItem.Property(widget.10),epg) + !Skin.HasSetting(homemenu.clean.flix)</enable>
                 </control>
-                <control type="radiobutton" id="10006" description="Widget ClearLogo">
+                <control type="radiobutton" id="51006" description="Widget ClearLogo">
                     <radioposx>845</radioposx>
                     <selected>!String.IsEqual(Container(211).ListItem.Property(widgetClearLogoThumb.10),no)</selected>
                     <width>100%</width>
@@ -2229,7 +2229,7 @@
                     <onclick>SendClick(404)</onclick>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.10),epg)</visible>
                 </control>
-                <control type="button" id="10007" description="Widget Aspect Ratio">
+                <control type="button" id="51007" description="Widget Aspect Ratio">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31401]</label>
@@ -2242,7 +2242,7 @@
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widget.10),mysubmenu)</enable>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.10),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="10008" description="Widget Edge Distance">
+                <control type="button" id="51008" description="Widget Edge Distance">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31453]</label>
@@ -2255,7 +2255,7 @@
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.10),mysubmenu) + !String.Contains(Container(211).ListItem.Property(widget.10),weather) + !String.IsEqual(Container(211).ListItem.Property(widget.10),system)</visible>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.10),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="10009" description="Widget SortBy">
+                <control type="button" id="51009" description="Widget SortBy">
                     <width>100%</width>
                     <height>66</height>
                     <label>581</label>
@@ -2265,7 +2265,7 @@
                     <align>left</align>
                     <include>DefDialogButtonsGradient</include>
                 </control>
-                <control type="button" id="10010">
+                <control type="button" id="51010">
                     <description>Change widget 1 sort order</description>
                     <width>100%</width>
                     <height>66</height>
@@ -2276,7 +2276,7 @@
                     <label>580</label>
                     <label2>$VAR[LabelSort10]</label2>
                 </control>
-                <control type="button" id="10011">
+                <control type="button" id="51011">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -2289,7 +2289,7 @@
                     <label2>$VAR[AutoScrollTime10]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
                 </control>
-                <control type="button" id="43010" description="ListType">
+                <control type="button" id="51012" description="ListType">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31341]</label>
@@ -2299,7 +2299,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu) + !$EXP[HomeIsCleanMinimal] + !$EXP[HomeIsSpotlight]</visible>
                 </control>
-                <control type="radiobutton" id="43110" description="Prevent reload">
+                <control type="radiobutton" id="51013" description="Prevent reload">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetSortby.10),userpreference)</selected>
                     <width>100%</width>
@@ -2319,7 +2319,7 @@
 
 
             <!-- Widget 11 -->
-            <control type="grouplist" id="11000">
+            <control type="grouplist" id="51100">
                 <onleft>ClearProperty(skinshortcuts-Widget,Home)</onleft>
                 <onleft>SetFocus(7111)</onleft>
                 <onright>ClearProperty(skinshortcuts-Widget,Home)</onright>
@@ -2335,7 +2335,7 @@
                 <itemgap>3</itemgap>
                 <scrolltime>0</scrolltime>
                 <visible>String.IsEqual(Window(Home).Property(skinshortcuts-Widget),11)</visible>
-                <control type="button" id="11001">
+                <control type="button" id="51101">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -2352,7 +2352,7 @@
                     <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetEnable.11),yes)">SetProperty(customValue,)</onclick>
                     <onclick>SendClick(404)</onclick>
                 </control>
-                <control type="button" id="11002" description="Widget">
+                <control type="button" id="51102" description="Widget">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31266] 11</label>
@@ -2364,7 +2364,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <onclick>SendClick(312)</onclick>
                 </control>
-                <control type="button" id="11003" description="Set Custom">
+                <control type="button" id="51103" description="Set Custom">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31474]</label>
@@ -2378,7 +2378,7 @@
                     <onclick>SetProperty(level,11)</onclick>
                     <onclick>SendClick(405)</onclick>
                 </control>
-                <control type="radiobutton" id="11004" description="Widget Fullscreen">
+                <control type="radiobutton" id="51104" description="Widget Fullscreen">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.11),yes) | Skin.HasSetting(homemenu.netflix)</selected>
                     <width>100%</width>
@@ -2394,7 +2394,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>[ $EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets] ] + !Skin.HasSetting(homemenu.netflix)</enable>
                 </control>
-                <control type="button" id="11005" description="Widget Aspect">
+                <control type="button" id="51105" description="Widget Aspect">
                     <width>100%</width>
                     <height>66</height>
                     <label>31261</label>
@@ -2405,7 +2405,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgettarget.11),system) + !String.IsEqual(Container(211).ListItem.Property(widget.11),epg) + !Skin.HasSetting(homemenu.clean.flix)</enable>
                 </control>
-                <control type="radiobutton" id="11006" description="Widget ClearLogo">
+                <control type="radiobutton" id="51106" description="Widget ClearLogo">
                     <radioposx>845</radioposx>
                     <selected>!String.IsEqual(Container(211).ListItem.Property(widgetClearLogoThumb.11),no)</selected>
                     <width>100%</width>
@@ -2422,7 +2422,7 @@
                     <onclick>SendClick(404)</onclick>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.11),epg)</visible>
                 </control>
-                <control type="button" id="11007" description="Widget Aspect Ratio">
+                <control type="button" id="51107" description="Widget Aspect Ratio">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31401]</label>
@@ -2435,7 +2435,7 @@
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widget.11),mysubmenu)</enable>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.11),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="11008" description="Widget Edge Distance">
+                <control type="button" id="51108" description="Widget Edge Distance">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31453]</label>
@@ -2448,7 +2448,7 @@
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.11),mysubmenu) + !String.Contains(Container(211).ListItem.Property(widget.11),weather) + !String.IsEqual(Container(211).ListItem.Property(widget.11),system)</visible>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.11),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="11009" description="Widget SortBy">
+                <control type="button" id="51109" description="Widget SortBy">
                     <width>100%</width>
                     <height>66</height>
                     <label>581</label>
@@ -2458,7 +2458,7 @@
                     <align>left</align>
                     <include>DefDialogButtonsGradient</include>
                 </control>
-                <control type="button" id="11010">
+                <control type="button" id="51110">
                     <description>Change widget 1 sort order</description>
                     <width>100%</width>
                     <height>66</height>
@@ -2469,7 +2469,7 @@
                     <label>580</label>
                     <label2>$VAR[LabelSort11]</label2>
                 </control>
-                <control type="button" id="11011">
+                <control type="button" id="51111">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -2482,7 +2482,7 @@
                     <label2>$VAR[AutoScrollTime11]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
                 </control>
-                <control type="button" id="43011" description="ListType">
+                <control type="button" id="51112" description="ListType">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31341]</label>
@@ -2492,7 +2492,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu) + !$EXP[HomeIsCleanMinimal] + !$EXP[HomeIsSpotlight]</visible>
                 </control>
-                <control type="radiobutton" id="43111" description="Prevent reload">
+                <control type="radiobutton" id="51113" description="Prevent reload">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetSortby.11),userpreference)</selected>
                     <width>100%</width>
@@ -2512,7 +2512,7 @@
 
 
             <!-- Widget 12 -->
-            <control type="grouplist" id="12000">
+            <control type="grouplist" id="51200">
                 <onleft>ClearProperty(skinshortcuts-Widget,Home)</onleft>
                 <onleft>SetFocus(7112)</onleft>
                 <onright>ClearProperty(skinshortcuts-Widget,Home)</onright>
@@ -2528,7 +2528,7 @@
                 <itemgap>3</itemgap>
                 <scrolltime>0</scrolltime>
                 <visible>String.IsEqual(Window(Home).Property(skinshortcuts-Widget),12)</visible>
-                <control type="button" id="12001">
+                <control type="button" id="51201">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -2545,7 +2545,7 @@
                     <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetEnable.12),yes)">SetProperty(customValue,)</onclick>
                     <onclick>SendClick(404)</onclick>
                 </control>
-                <control type="button" id="12002" description="Widget">
+                <control type="button" id="51202" description="Widget">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31266] 12</label>
@@ -2557,7 +2557,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <onclick>SendClick(312)</onclick>
                 </control>
-                <control type="button" id="12003" description="Set Custom">
+                <control type="button" id="51203" description="Set Custom">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31474]</label>
@@ -2571,7 +2571,7 @@
                     <onclick>SetProperty(level,12)</onclick>
                     <onclick>SendClick(405)</onclick>
                 </control>
-                <control type="radiobutton" id="12004" description="Widget Fullscreen">
+                <control type="radiobutton" id="51204" description="Widget Fullscreen">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.12),yes) | Skin.HasSetting(homemenu.netflix)</selected>
                     <width>100%</width>
@@ -2587,7 +2587,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>[ $EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets] ] + !Skin.HasSetting(homemenu.netflix)</enable>
                 </control>
-                <control type="button" id="12005" description="Widget Aspect">
+                <control type="button" id="51205" description="Widget Aspect">
                     <width>100%</width>
                     <height>66</height>
                     <label>31261</label>
@@ -2598,7 +2598,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgettarget.12),system) + !String.IsEqual(Container(211).ListItem.Property(widget.12),epg) + !Skin.HasSetting(homemenu.clean.flix)</enable>
                 </control>
-                <control type="radiobutton" id="12006" description="Widget ClearLogo">
+                <control type="radiobutton" id="51206" description="Widget ClearLogo">
                     <radioposx>845</radioposx>
                     <selected>!String.IsEqual(Container(211).ListItem.Property(widgetClearLogoThumb.12),no)</selected>
                     <width>100%</width>
@@ -2615,7 +2615,7 @@
                     <onclick>SendClick(404)</onclick>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.12),epg)</visible>
                 </control>
-                <control type="button" id="12007" description="Widget Aspect Ratio">
+                <control type="button" id="51207" description="Widget Aspect Ratio">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31401]</label>
@@ -2628,7 +2628,7 @@
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widget.12),mysubmenu)</enable>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.12),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="12008" description="Widget Edge Distance">
+                <control type="button" id="51208" description="Widget Edge Distance">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31453]</label>
@@ -2641,7 +2641,7 @@
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.12),mysubmenu) + !String.Contains(Container(211).ListItem.Property(widget.12),weather) + !String.IsEqual(Container(211).ListItem.Property(widget.12),system)</visible>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.12),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="12009" description="Widget SortBy">
+                <control type="button" id="51209" description="Widget SortBy">
                     <width>100%</width>
                     <height>66</height>
                     <label>581</label>
@@ -2651,7 +2651,7 @@
                     <align>left</align>
                     <include>DefDialogButtonsGradient</include>
                 </control>
-                <control type="button" id="12010">
+                <control type="button" id="51210">
                     <description>Change widget 1 sort order</description>
                     <width>100%</width>
                     <height>66</height>
@@ -2662,7 +2662,7 @@
                     <label>580</label>
                     <label2>$VAR[LabelSort12]</label2>
                 </control>
-                <control type="button" id="12011">
+                <control type="button" id="51211">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -2675,7 +2675,7 @@
                     <label2>$VAR[AutoScrollTime12]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
                 </control>
-                <control type="button" id="43012" description="ListType">
+                <control type="button" id="51212" description="ListType">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31341]</label>
@@ -2685,7 +2685,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu) + !$EXP[HomeIsCleanMinimal] + !$EXP[HomeIsSpotlight]</visible>
                 </control>
-                <control type="radiobutton" id="43112" description="Prevent reload">
+                <control type="radiobutton" id="51213" description="Prevent reload">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetSortby.12),userpreference)</selected>
                     <width>100%</width>
@@ -2705,7 +2705,7 @@
 
 
             <!-- Widget 13 -->
-            <control type="grouplist" id="13000">
+            <control type="grouplist" id="51300">
                 <onleft>ClearProperty(skinshortcuts-Widget,Home)</onleft>
                 <onleft>SetFocus(7113)</onleft>
                 <onright>ClearProperty(skinshortcuts-Widget,Home)</onright>
@@ -2721,7 +2721,7 @@
                 <itemgap>3</itemgap>
                 <scrolltime>0</scrolltime>
                 <visible>String.IsEqual(Window(Home).Property(skinshortcuts-Widget),13)</visible>
-                <control type="button" id="13001">
+                <control type="button" id="51301">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -2738,7 +2738,7 @@
                     <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetEnable.13),yes)">SetProperty(customValue,)</onclick>
                     <onclick>SendClick(404)</onclick>
                 </control>
-                <control type="button" id="13002" description="Widget">
+                <control type="button" id="51302" description="Widget">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31266] 13</label>
@@ -2750,7 +2750,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <onclick>SendClick(312)</onclick>
                 </control>
-                <control type="button" id="13003" description="Set Custom">
+                <control type="button" id="51303" description="Set Custom">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31474]</label>
@@ -2764,7 +2764,7 @@
                     <onclick>SetProperty(level,13)</onclick>
                     <onclick>SendClick(405)</onclick>
                 </control>
-                <control type="radiobutton" id="13004" description="Widget Fullscreen">
+                <control type="radiobutton" id="51304" description="Widget Fullscreen">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.13),yes) | Skin.HasSetting(homemenu.netflix)</selected>
                     <width>100%</width>
@@ -2780,7 +2780,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>[ $EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets] ] + !Skin.HasSetting(homemenu.netflix)</enable>
                 </control>
-                <control type="button" id="13005" description="Widget Aspect">
+                <control type="button" id="51305" description="Widget Aspect">
                     <width>100%</width>
                     <height>66</height>
                     <label>31261</label>
@@ -2791,7 +2791,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgettarget.13),system) + !String.IsEqual(Container(211).ListItem.Property(widget.13),epg) + !Skin.HasSetting(homemenu.clean.flix)</enable>
                 </control>
-                <control type="radiobutton" id="13006" description="Widget ClearLogo">
+                <control type="radiobutton" id="51306" description="Widget ClearLogo">
                     <radioposx>845</radioposx>
                     <selected>!String.IsEqual(Container(211).ListItem.Property(widgetClearLogoThumb.13),no)</selected>
                     <width>100%</width>
@@ -2808,7 +2808,7 @@
                     <onclick>SendClick(404)</onclick>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.13),epg)</visible>
                 </control>
-                <control type="button" id="13007" description="Widget Aspect Ratio">
+                <control type="button" id="51307" description="Widget Aspect Ratio">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31401]</label>
@@ -2821,7 +2821,7 @@
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widget.13),mysubmenu)</enable>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.13),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="13008" description="Widget Edge Distance">
+                <control type="button" id="51308" description="Widget Edge Distance">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31453]</label>
@@ -2834,7 +2834,7 @@
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.13),mysubmenu) + !String.Contains(Container(211).ListItem.Property(widget.13),weather) + !String.IsEqual(Container(211).ListItem.Property(widget.13),system)</visible>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.13),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="13009" description="Widget SortBy">
+                <control type="button" id="51309" description="Widget SortBy">
                     <width>100%</width>
                     <height>66</height>
                     <label>581</label>
@@ -2844,7 +2844,7 @@
                     <align>left</align>
                     <include>DefDialogButtonsGradient</include>
                 </control>
-                <control type="button" id="13010">
+                <control type="button" id="51310">
                     <description>Change widget 1 sort order</description>
                     <width>100%</width>
                     <height>66</height>
@@ -2855,7 +2855,7 @@
                     <label>580</label>
                     <label2>$VAR[LabelSort13]</label2>
                 </control>
-                <control type="button" id="13011">
+                <control type="button" id="51311">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -2868,7 +2868,7 @@
                     <label2>$VAR[AutoScrollTime13]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
                 </control>
-                <control type="button" id="43013" description="ListType">
+                <control type="button" id="51312" description="ListType">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31341]</label>
@@ -2878,7 +2878,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu) + !$EXP[HomeIsCleanMinimal] + !$EXP[HomeIsSpotlight]</visible>
                 </control>
-                <control type="radiobutton" id="43113" description="Prevent reload">
+                <control type="radiobutton" id="51313" description="Prevent reload">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetSortby.13),userpreference)</selected>
                     <width>100%</width>
@@ -2898,7 +2898,7 @@
 
 
             <!-- Widget 14 -->
-            <control type="grouplist" id="14000">
+            <control type="grouplist" id="51400">
                 <onleft>ClearProperty(skinshortcuts-Widget,Home)</onleft>
                 <onleft>SetFocus(7114)</onleft>
                 <onright>ClearProperty(skinshortcuts-Widget,Home)</onright>
@@ -2914,7 +2914,7 @@
                 <itemgap>3</itemgap>
                 <scrolltime>0</scrolltime>
                 <visible>String.IsEqual(Window(Home).Property(skinshortcuts-Widget),14)</visible>
-                <control type="button" id="14001">
+                <control type="button" id="51401">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -2931,7 +2931,7 @@
                     <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetEnable.14),yes)">SetProperty(customValue,)</onclick>
                     <onclick>SendClick(404)</onclick>
                 </control>
-                <control type="button" id="14002" description="Widget">
+                <control type="button" id="51402" description="Widget">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31266] 14</label>
@@ -2943,7 +2943,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <onclick>SendClick(312)</onclick>
                 </control>
-                <control type="button" id="14003" description="Set Custom">
+                <control type="button" id="51403" description="Set Custom">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31474]</label>
@@ -2957,7 +2957,7 @@
                     <onclick>SetProperty(level,14)</onclick>
                     <onclick>SendClick(405)</onclick>
                 </control>
-                <control type="radiobutton" id="14004" description="Widget Fullscreen">
+                <control type="radiobutton" id="51404" description="Widget Fullscreen">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.14),yes) | Skin.HasSetting(homemenu.netflix)</selected>
                     <width>100%</width>
@@ -2973,7 +2973,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>[ $EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets] ] + !Skin.HasSetting(homemenu.netflix)</enable>
                 </control>
-                <control type="button" id="14005" description="Widget Aspect">
+                <control type="button" id="51405" description="Widget Aspect">
                     <width>100%</width>
                     <height>66</height>
                     <label>31261</label>
@@ -2984,7 +2984,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgettarget.14),system) + !String.IsEqual(Container(211).ListItem.Property(widget.14),epg) + !Skin.HasSetting(homemenu.clean.flix)</enable>
                 </control>
-                <control type="radiobutton" id="14006" description="Widget ClearLogo">
+                <control type="radiobutton" id="51406" description="Widget ClearLogo">
                     <radioposx>845</radioposx>
                     <selected>!String.IsEqual(Container(211).ListItem.Property(widgetClearLogoThumb.14),no)</selected>
                     <width>100%</width>
@@ -3001,7 +3001,7 @@
                     <onclick>SendClick(404)</onclick>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.14),epg)</visible>
                 </control>
-                <control type="button" id="14007" description="Widget Aspect Ratio">
+                <control type="button" id="51407" description="Widget Aspect Ratio">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31401]</label>
@@ -3014,7 +3014,7 @@
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widget.14),mysubmenu)</enable>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.14),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="14008" description="Widget Edge Distance">
+                <control type="button" id="51408" description="Widget Edge Distance">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31453]</label>
@@ -3027,7 +3027,7 @@
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.14),mysubmenu) + !String.Contains(Container(211).ListItem.Property(widget.14),weather) + !String.IsEqual(Container(211).ListItem.Property(widget.14),system)</visible>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.14),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="14009" description="Widget SortBy">
+                <control type="button" id="51409" description="Widget SortBy">
                     <width>100%</width>
                     <height>66</height>
                     <label>581</label>
@@ -3037,7 +3037,7 @@
                     <align>left</align>
                     <include>DefDialogButtonsGradient</include>
                 </control>
-                <control type="button" id="14010">
+                <control type="button" id="51410">
                     <description>Change widget 1 sort order</description>
                     <width>100%</width>
                     <height>66</height>
@@ -3048,7 +3048,7 @@
                     <label>580</label>
                     <label2>$VAR[LabelSort14]</label2>
                 </control>
-                <control type="button" id="14011">
+                <control type="button" id="51411">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -3061,7 +3061,7 @@
                     <label2>$VAR[AutoScrollTime14]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
                 </control>
-                <control type="button" id="43014" description="ListType">
+                <control type="button" id="51412" description="ListType">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31341]</label>
@@ -3071,7 +3071,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu) + !$EXP[HomeIsCleanMinimal] + !$EXP[HomeIsSpotlight]</visible>
                 </control>
-                <control type="radiobutton" id="43114" description="Prevent reload">
+                <control type="radiobutton" id="51413" description="Prevent reload">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetSortby.14),userpreference)</selected>
                     <width>100%</width>
@@ -3091,7 +3091,7 @@
 
 
             <!-- Widget 15 -->
-            <control type="grouplist" id="15000">
+            <control type="grouplist" id="51500">
                 <onleft>ClearProperty(skinshortcuts-Widget,Home)</onleft>
                 <onleft>SetFocus(7115)</onleft>
                 <onright>ClearProperty(skinshortcuts-Widget,Home)</onright>
@@ -3107,7 +3107,7 @@
                 <itemgap>3</itemgap>
                 <scrolltime>0</scrolltime>
                 <visible>String.IsEqual(Window(Home).Property(skinshortcuts-Widget),15)</visible>
-                <control type="button" id="15001">
+                <control type="button" id="51501">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -3124,7 +3124,7 @@
                     <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetEnable.15),yes)">SetProperty(customValue,)</onclick>
                     <onclick>SendClick(404)</onclick>
                 </control>
-                <control type="button" id="15002" description="Widget">
+                <control type="button" id="51502" description="Widget">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31266] 15</label>
@@ -3136,7 +3136,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <onclick>SendClick(312)</onclick>
                 </control>
-                <control type="button" id="15003" description="Set Custom">
+                <control type="button" id="51503" description="Set Custom">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31474]</label>
@@ -3150,7 +3150,7 @@
                     <onclick>SetProperty(level,15)</onclick>
                     <onclick>SendClick(405)</onclick>
                 </control>
-                <control type="radiobutton" id="15004" description="Widget Fullscreen">
+                <control type="radiobutton" id="51504" description="Widget Fullscreen">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.15),yes) | Skin.HasSetting(homemenu.netflix)</selected>
                     <width>100%</width>
@@ -3166,7 +3166,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>[ $EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets] ] + !Skin.HasSetting(homemenu.netflix)</enable>
                 </control>
-                <control type="button" id="15005" description="Widget Aspect">
+                <control type="button" id="51505" description="Widget Aspect">
                     <width>100%</width>
                     <height>66</height>
                     <label>31261</label>
@@ -3177,7 +3177,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgettarget.15),system) + !String.IsEqual(Container(211).ListItem.Property(widget.15),epg) + !Skin.HasSetting(homemenu.clean.flix)</enable>
                 </control>
-                <control type="radiobutton" id="15006" description="Widget ClearLogo">
+                <control type="radiobutton" id="51506" description="Widget ClearLogo">
                     <radioposx>845</radioposx>
                     <selected>!String.IsEqual(Container(211).ListItem.Property(widgetClearLogoThumb.15),no)</selected>
                     <width>100%</width>
@@ -3194,7 +3194,7 @@
                     <onclick>SendClick(404)</onclick>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.15),epg)</visible>
                 </control>
-                <control type="button" id="15007" description="Widget Aspect Ratio">
+                <control type="button" id="51507" description="Widget Aspect Ratio">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31401]</label>
@@ -3207,7 +3207,7 @@
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widget.15),mysubmenu)</enable>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.15),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="15008" description="Widget Edge Distance">
+                <control type="button" id="51508" description="Widget Edge Distance">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31453]</label>
@@ -3220,7 +3220,7 @@
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.15),mysubmenu) + !String.Contains(Container(211).ListItem.Property(widget.15),weather) + !String.IsEqual(Container(211).ListItem.Property(widget.15),system)</visible>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.15),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="15009" description="Widget SortBy">
+                <control type="button" id="51509" description="Widget SortBy">
                     <width>100%</width>
                     <height>66</height>
                     <label>581</label>
@@ -3230,7 +3230,7 @@
                     <align>left</align>
                     <include>DefDialogButtonsGradient</include>
                 </control>
-                <control type="button" id="15010">
+                <control type="button" id="51510">
                     <description>Change widget 1 sort order</description>
                     <width>100%</width>
                     <height>66</height>
@@ -3241,7 +3241,7 @@
                     <label>580</label>
                     <label2>$VAR[LabelSort15]</label2>
                 </control>
-                <control type="button" id="15011">
+                <control type="button" id="51511">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -3254,7 +3254,7 @@
                     <label2>$VAR[AutoScrollTime15]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
                 </control>
-                <control type="button" id="43015" description="ListType">
+                <control type="button" id="51512" description="ListType">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31341]</label>
@@ -3264,7 +3264,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu) + !$EXP[HomeIsCleanMinimal] + !$EXP[HomeIsSpotlight]</visible>
                 </control>
-                <control type="radiobutton" id="43115" description="Prevent reload">
+                <control type="radiobutton" id="51513" description="Prevent reload">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetSortby.15),userpreference)</selected>
                     <width>100%</width>
@@ -3284,7 +3284,7 @@
 
 
             <!-- Widget 16 -->
-            <control type="grouplist" id="16000">
+            <control type="grouplist" id="51600">
                 <onleft>ClearProperty(skinshortcuts-Widget,Home)</onleft>
                 <onleft>SetFocus(7116)</onleft>
                 <onright>ClearProperty(skinshortcuts-Widget,Home)</onright>
@@ -3300,7 +3300,7 @@
                 <itemgap>3</itemgap>
                 <scrolltime>0</scrolltime>
                 <visible>String.IsEqual(Window(Home).Property(skinshortcuts-Widget),16)</visible>
-                <control type="button" id="16001">
+                <control type="button" id="51601">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -3317,7 +3317,7 @@
                     <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetEnable.16),yes)">SetProperty(customValue,)</onclick>
                     <onclick>SendClick(404)</onclick>
                 </control>
-                <control type="button" id="16002" description="Widget">
+                <control type="button" id="51602" description="Widget">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31266] 16</label>
@@ -3329,7 +3329,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <onclick>SendClick(312)</onclick>
                 </control>
-                <control type="button" id="16003" description="Set Custom">
+                <control type="button" id="51603" description="Set Custom">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31474]</label>
@@ -3343,7 +3343,7 @@
                     <onclick>SetProperty(level,16)</onclick>
                     <onclick>SendClick(405)</onclick>
                 </control>
-                <control type="radiobutton" id="16004" description="Widget Fullscreen">
+                <control type="radiobutton" id="51604" description="Widget Fullscreen">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.16),yes) | Skin.HasSetting(homemenu.netflix)</selected>
                     <width>100%</width>
@@ -3359,7 +3359,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>[ $EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets] ] + !Skin.HasSetting(homemenu.netflix)</enable>
                 </control>
-                <control type="button" id="16005" description="Widget Aspect">
+                <control type="button" id="51605" description="Widget Aspect">
                     <width>100%</width>
                     <height>66</height>
                     <label>31261</label>
@@ -3370,7 +3370,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgettarget.16),system) + !String.IsEqual(Container(211).ListItem.Property(widget.16),epg) + !Skin.HasSetting(homemenu.clean.flix)</enable>
                 </control>
-                <control type="radiobutton" id="16006" description="Widget ClearLogo">
+                <control type="radiobutton" id="51606" description="Widget ClearLogo">
                     <radioposx>845</radioposx>
                     <selected>!String.IsEqual(Container(211).ListItem.Property(widgetClearLogoThumb.16),no)</selected>
                     <width>100%</width>
@@ -3387,7 +3387,7 @@
                     <onclick>SendClick(404)</onclick>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.16),epg)</visible>
                 </control>
-                <control type="button" id="16007" description="Widget Aspect Ratio">
+                <control type="button" id="51607" description="Widget Aspect Ratio">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31401]</label>
@@ -3400,7 +3400,7 @@
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widget.16),mysubmenu)</enable>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.16),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="16008" description="Widget Edge Distance">
+                <control type="button" id="51608" description="Widget Edge Distance">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31453]</label>
@@ -3413,7 +3413,7 @@
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.16),mysubmenu) + !String.Contains(Container(211).ListItem.Property(widget.16),weather) + !String.IsEqual(Container(211).ListItem.Property(widget.16),system)</visible>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.16),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="16009" description="Widget SortBy">
+                <control type="button" id="51609" description="Widget SortBy">
                     <width>100%</width>
                     <height>66</height>
                     <label>581</label>
@@ -3423,7 +3423,7 @@
                     <align>left</align>
                     <include>DefDialogButtonsGradient</include>
                 </control>
-                <control type="button" id="16010">
+                <control type="button" id="51610">
                     <description>Change widget 1 sort order</description>
                     <width>100%</width>
                     <height>66</height>
@@ -3434,7 +3434,7 @@
                     <label>580</label>
                     <label2>$VAR[LabelSort16]</label2>
                 </control>
-                <control type="button" id="16011">
+                <control type="button" id="51611">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -3447,7 +3447,7 @@
                     <label2>$VAR[AutoScrollTime16]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
                 </control>
-                <control type="button" id="43016" description="ListType">
+                <control type="button" id="51612" description="ListType">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31341]</label>
@@ -3457,7 +3457,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu) + !$EXP[HomeIsCleanMinimal] + !$EXP[HomeIsSpotlight]</visible>
                 </control>
-                <control type="radiobutton" id="43116" description="Prevent reload">
+                <control type="radiobutton" id="51613" description="Prevent reload">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetSortby.16),userpreference)</selected>
                     <width>100%</width>
@@ -3477,7 +3477,7 @@
 
 
             <!-- Widget 17 -->
-            <control type="grouplist" id="17000">
+            <control type="grouplist" id="51700">
                 <onleft>ClearProperty(skinshortcuts-Widget,Home)</onleft>
                 <onleft>SetFocus(7117)</onleft>
                 <onright>ClearProperty(skinshortcuts-Widget,Home)</onright>
@@ -3493,7 +3493,7 @@
                 <itemgap>3</itemgap>
                 <scrolltime>0</scrolltime>
                 <visible>String.IsEqual(Window(Home).Property(skinshortcuts-Widget),17)</visible>
-                <control type="button" id="17001">
+                <control type="button" id="51701">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -3510,7 +3510,7 @@
                     <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetEnable.17),yes)">SetProperty(customValue,)</onclick>
                     <onclick>SendClick(404)</onclick>
                 </control>
-                <control type="button" id="17002" description="Widget">
+                <control type="button" id="51702" description="Widget">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31266] 17</label>
@@ -3522,7 +3522,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <onclick>SendClick(312)</onclick>
                 </control>
-                <control type="button" id="17003" description="Set Custom">
+                <control type="button" id="51703" description="Set Custom">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31474]</label>
@@ -3536,7 +3536,7 @@
                     <onclick>SetProperty(level,17)</onclick>
                     <onclick>SendClick(405)</onclick>
                 </control>
-                <control type="radiobutton" id="17004" description="Widget Fullscreen">
+                <control type="radiobutton" id="51704" description="Widget Fullscreen">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.17),yes) | Skin.HasSetting(homemenu.netflix)</selected>
                     <width>100%</width>
@@ -3552,7 +3552,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>[ $EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets] ] + !Skin.HasSetting(homemenu.netflix)</enable>
                 </control>
-                <control type="button" id="17005" description="Widget Aspect">
+                <control type="button" id="51705" description="Widget Aspect">
                     <width>100%</width>
                     <height>66</height>
                     <label>31261</label>
@@ -3563,7 +3563,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgettarget.17),system) + !String.IsEqual(Container(211).ListItem.Property(widget.17),epg) + !Skin.HasSetting(homemenu.clean.flix)</enable>
                 </control>
-                <control type="radiobutton" id="17006" description="Widget ClearLogo">
+                <control type="radiobutton" id="51706" description="Widget ClearLogo">
                     <radioposx>845</radioposx>
                     <selected>!String.IsEqual(Container(211).ListItem.Property(widgetClearLogoThumb.17),no)</selected>
                     <width>100%</width>
@@ -3580,7 +3580,7 @@
                     <onclick>SendClick(404)</onclick>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.17),epg)</visible>
                 </control>
-                <control type="button" id="17007" description="Widget Aspect Ratio">
+                <control type="button" id="51707" description="Widget Aspect Ratio">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31401]</label>
@@ -3593,7 +3593,7 @@
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widget.17),mysubmenu)</enable>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.17),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="17008" description="Widget Edge Distance">
+                <control type="button" id="51708" description="Widget Edge Distance">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31453]</label>
@@ -3606,7 +3606,7 @@
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.17),mysubmenu) + !String.Contains(Container(211).ListItem.Property(widget.17),weather) + !String.IsEqual(Container(211).ListItem.Property(widget.17),system)</visible>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.17),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="17009" description="Widget SortBy">
+                <control type="button" id="51709" description="Widget SortBy">
                     <width>100%</width>
                     <height>66</height>
                     <label>581</label>
@@ -3616,7 +3616,7 @@
                     <align>left</align>
                     <include>DefDialogButtonsGradient</include>
                 </control>
-                <control type="button" id="17010">
+                <control type="button" id="51710">
                     <description>Change widget 1 sort order</description>
                     <width>100%</width>
                     <height>66</height>
@@ -3627,7 +3627,7 @@
                     <label>580</label>
                     <label2>$VAR[LabelSort17]</label2>
                 </control>
-                <control type="button" id="17011">
+                <control type="button" id="51711">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -3640,7 +3640,7 @@
                     <label2>$VAR[AutoScrollTime17]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
                 </control>
-                <control type="button" id="43017" description="ListType">
+                <control type="button" id="51712" description="ListType">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31341]</label>
@@ -3650,7 +3650,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu) + !$EXP[HomeIsCleanMinimal] + !$EXP[HomeIsSpotlight]</visible>
                 </control>
-                <control type="radiobutton" id="43117" description="Prevent reload">
+                <control type="radiobutton" id="51713" description="Prevent reload">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetSortby.17),userpreference)</selected>
                     <width>100%</width>
@@ -3670,7 +3670,7 @@
 
 
             <!-- Widget 18 -->
-            <control type="grouplist" id="18000">
+            <control type="grouplist" id="51800">
                 <onleft>ClearProperty(skinshortcuts-Widget,Home)</onleft>
                 <onleft>SetFocus(7118)</onleft>
                 <onright>ClearProperty(skinshortcuts-Widget,Home)</onright>
@@ -3686,7 +3686,7 @@
                 <itemgap>3</itemgap>
                 <scrolltime>0</scrolltime>
                 <visible>String.IsEqual(Window(Home).Property(skinshortcuts-Widget),18)</visible>
-                <control type="button" id="18001">
+                <control type="button" id="51801">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -3703,7 +3703,7 @@
                     <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetEnable.18),yes)">SetProperty(customValue,)</onclick>
                     <onclick>SendClick(404)</onclick>
                 </control>
-                <control type="button" id="18002" description="Widget">
+                <control type="button" id="51802" description="Widget">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31266] 18</label>
@@ -3715,7 +3715,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <onclick>SendClick(312)</onclick>
                 </control>
-                <control type="button" id="18003" description="Set Custom">
+                <control type="button" id="51803" description="Set Custom">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31474]</label>
@@ -3729,7 +3729,7 @@
                     <onclick>SetProperty(level,18)</onclick>
                     <onclick>SendClick(405)</onclick>
                 </control>
-                <control type="radiobutton" id="18004" description="Widget Fullscreen">
+                <control type="radiobutton" id="51804" description="Widget Fullscreen">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.18),yes) | Skin.HasSetting(homemenu.netflix)</selected>
                     <width>100%</width>
@@ -3745,7 +3745,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>[ $EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets] ] + !Skin.HasSetting(homemenu.netflix)</enable>
                 </control>
-                <control type="button" id="18005" description="Widget Aspect">
+                <control type="button" id="51805" description="Widget Aspect">
                     <width>100%</width>
                     <height>66</height>
                     <label>31261</label>
@@ -3756,7 +3756,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgettarget.18),system) + !String.IsEqual(Container(211).ListItem.Property(widget.18),epg) + !Skin.HasSetting(homemenu.clean.flix)</enable>
                 </control>
-                <control type="radiobutton" id="18006" description="Widget ClearLogo">
+                <control type="radiobutton" id="51806" description="Widget ClearLogo">
                     <radioposx>845</radioposx>
                     <selected>!String.IsEqual(Container(211).ListItem.Property(widgetClearLogoThumb.18),no)</selected>
                     <width>100%</width>
@@ -3773,7 +3773,7 @@
                     <onclick>SendClick(404)</onclick>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.18),epg)</visible>
                 </control>
-                <control type="button" id="18007" description="Widget Aspect Ratio">
+                <control type="button" id="51807" description="Widget Aspect Ratio">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31401]</label>
@@ -3786,7 +3786,7 @@
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widget.18),mysubmenu)</enable>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.18),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="18008" description="Widget Edge Distance">
+                <control type="button" id="51808" description="Widget Edge Distance">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31453]</label>
@@ -3799,7 +3799,7 @@
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.18),mysubmenu) + !String.Contains(Container(211).ListItem.Property(widget.18),weather) + !String.IsEqual(Container(211).ListItem.Property(widget.18),system)</visible>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.18),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="18009" description="Widget SortBy">
+                <control type="button" id="51809" description="Widget SortBy">
                     <width>100%</width>
                     <height>66</height>
                     <label>581</label>
@@ -3809,7 +3809,7 @@
                     <align>left</align>
                     <include>DefDialogButtonsGradient</include>
                 </control>
-                <control type="button" id="18010">
+                <control type="button" id="51810">
                     <description>Change widget 1 sort order</description>
                     <width>100%</width>
                     <height>66</height>
@@ -3820,7 +3820,7 @@
                     <label>580</label>
                     <label2>$VAR[LabelSort18]</label2>
                 </control>
-                <control type="button" id="18011">
+                <control type="button" id="51811">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -3833,7 +3833,7 @@
                     <label2>$VAR[AutoScrollTime18]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
                 </control>
-                <control type="button" id="43018" description="ListType">
+                <control type="button" id="51812" description="ListType">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31341]</label>
@@ -3843,7 +3843,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu) + !$EXP[HomeIsCleanMinimal] + !$EXP[HomeIsSpotlight]</visible>
                 </control>
-                <control type="radiobutton" id="43118" description="Prevent reload">
+                <control type="radiobutton" id="51813" description="Prevent reload">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetSortby.18),userpreference)</selected>
                     <width>100%</width>
@@ -3863,7 +3863,7 @@
 
 
             <!-- Widget 19 -->
-            <control type="grouplist" id="19000">
+            <control type="grouplist" id="51900">
                 <onleft>ClearProperty(skinshortcuts-Widget,Home)</onleft>
                 <onleft>SetFocus(7119)</onleft>
                 <onright>ClearProperty(skinshortcuts-Widget,Home)</onright>
@@ -3879,7 +3879,7 @@
                 <itemgap>3</itemgap>
                 <scrolltime>0</scrolltime>
                 <visible>String.IsEqual(Window(Home).Property(skinshortcuts-Widget),19)</visible>
-                <control type="button" id="19001">
+                <control type="button" id="51901">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -3896,7 +3896,7 @@
                     <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetEnable.19),yes)">SetProperty(customValue,)</onclick>
                     <onclick>SendClick(404)</onclick>
                 </control>
-                <control type="button" id="19002" description="Widget">
+                <control type="button" id="51902" description="Widget">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31266] 19</label>
@@ -3908,7 +3908,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <onclick>SendClick(312)</onclick>
                 </control>
-                <control type="button" id="19003" description="Set Custom">
+                <control type="button" id="51903" description="Set Custom">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31474]</label>
@@ -3922,7 +3922,7 @@
                     <onclick>SetProperty(level,19)</onclick>
                     <onclick>SendClick(405)</onclick>
                 </control>
-                <control type="radiobutton" id="19004" description="Widget Fullscreen">
+                <control type="radiobutton" id="51904" description="Widget Fullscreen">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.19),yes) | Skin.HasSetting(homemenu.netflix)</selected>
                     <width>100%</width>
@@ -3938,7 +3938,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>[ $EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets] ] + !Skin.HasSetting(homemenu.netflix)</enable>
                 </control>
-                <control type="button" id="19005" description="Widget Aspect">
+                <control type="button" id="51905" description="Widget Aspect">
                     <width>100%</width>
                     <height>66</height>
                     <label>31261</label>
@@ -3949,7 +3949,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgettarget.19),system) + !String.IsEqual(Container(211).ListItem.Property(widget.19),epg) + !Skin.HasSetting(homemenu.clean.flix)</enable>
                 </control>
-                <control type="radiobutton" id="19006" description="Widget ClearLogo">
+                <control type="radiobutton" id="51906" description="Widget ClearLogo">
                     <radioposx>845</radioposx>
                     <selected>!String.IsEqual(Container(211).ListItem.Property(widgetClearLogoThumb.19),no)</selected>
                     <width>100%</width>
@@ -3966,7 +3966,7 @@
                     <onclick>SendClick(404)</onclick>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.19),epg)</visible>
                 </control>
-                <control type="button" id="19007" description="Widget Aspect Ratio">
+                <control type="button" id="51907" description="Widget Aspect Ratio">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31401]</label>
@@ -3979,7 +3979,7 @@
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widget.19),mysubmenu)</enable>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.19),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="19008" description="Widget Edge Distance">
+                <control type="button" id="51908" description="Widget Edge Distance">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31453]</label>
@@ -3992,7 +3992,7 @@
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.19),mysubmenu) + !String.Contains(Container(211).ListItem.Property(widget.19),weather) + !String.IsEqual(Container(211).ListItem.Property(widget.19),system)</visible>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.19),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="19009" description="Widget SortBy">
+                <control type="button" id="51909" description="Widget SortBy">
                     <width>100%</width>
                     <height>66</height>
                     <label>581</label>
@@ -4002,7 +4002,7 @@
                     <align>left</align>
                     <include>DefDialogButtonsGradient</include>
                 </control>
-                <control type="button" id="19010">
+                <control type="button" id="51910">
                     <description>Change widget 1 sort order</description>
                     <width>100%</width>
                     <height>66</height>
@@ -4013,7 +4013,7 @@
                     <label>580</label>
                     <label2>$VAR[LabelSort19]</label2>
                 </control>
-                <control type="button" id="19011">
+                <control type="button" id="51911">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -4026,7 +4026,7 @@
                     <label2>$VAR[AutoScrollTime19]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
                 </control>
-                <control type="button" id="43019" description="ListType">
+                <control type="button" id="51912" description="ListType">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31341]</label>
@@ -4036,7 +4036,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu) + !$EXP[HomeIsCleanMinimal] + !$EXP[HomeIsSpotlight]</visible>
                 </control>
-                <control type="radiobutton" id="43119" description="Prevent reload">
+                <control type="radiobutton" id="51913" description="Prevent reload">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetSortby.19),userpreference)</selected>
                     <width>100%</width>
@@ -4056,7 +4056,7 @@
 
 
             <!-- Widget 20 -->
-            <control type="grouplist" id="20000">
+            <control type="grouplist" id="52000">
                 <onleft>ClearProperty(skinshortcuts-Widget,Home)</onleft>
                 <onleft>SetFocus(7120)</onleft>
                 <onright>ClearProperty(skinshortcuts-Widget,Home)</onright>
@@ -4072,7 +4072,7 @@
                 <itemgap>3</itemgap>
                 <scrolltime>0</scrolltime>
                 <visible>String.IsEqual(Window(Home).Property(skinshortcuts-Widget),20)</visible>
-                <control type="button" id="20001">
+                <control type="button" id="52001">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -4089,7 +4089,7 @@
                     <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetEnable.20),yes)">SetProperty(customValue,)</onclick>
                     <onclick>SendClick(404)</onclick>
                 </control>
-                <control type="button" id="20002" description="Widget">
+                <control type="button" id="52002" description="Widget">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31266] 20</label>
@@ -4101,7 +4101,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <onclick>SendClick(312)</onclick>
                 </control>
-                <control type="button" id="20003" description="Set Custom">
+                <control type="button" id="52003" description="Set Custom">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31474]</label>
@@ -4115,7 +4115,7 @@
                     <onclick>SetProperty(level,20)</onclick>
                     <onclick>SendClick(405)</onclick>
                 </control>
-                <control type="radiobutton" id="20004" description="Widget Fullscreen">
+                <control type="radiobutton" id="52004" description="Widget Fullscreen">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.20),yes) | Skin.HasSetting(homemenu.netflix)</selected>
                     <width>100%</width>
@@ -4131,7 +4131,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>[ $EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets] ] + !Skin.HasSetting(homemenu.netflix)</enable>
                 </control>
-                <control type="button" id="20005" description="Widget Aspect">
+                <control type="button" id="52005" description="Widget Aspect">
                     <width>100%</width>
                     <height>66</height>
                     <label>31261</label>
@@ -4142,7 +4142,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgettarget.20),system) + !String.IsEqual(Container(211).ListItem.Property(widget.20),epg) + !Skin.HasSetting(homemenu.clean.flix)</enable>
                 </control>
-                <control type="radiobutton" id="20006" description="Widget ClearLogo">
+                <control type="radiobutton" id="52006" description="Widget ClearLogo">
                     <radioposx>845</radioposx>
                     <selected>!String.IsEqual(Container(211).ListItem.Property(widgetClearLogoThumb.20),no)</selected>
                     <width>100%</width>
@@ -4159,7 +4159,7 @@
                     <onclick>SendClick(404)</onclick>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.20),epg)</visible>
                 </control>
-                <control type="button" id="20007" description="Widget Aspect Ratio">
+                <control type="button" id="52007" description="Widget Aspect Ratio">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31401]</label>
@@ -4172,7 +4172,7 @@
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widget.20),mysubmenu)</enable>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.20),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="20008" description="Widget Edge Distance">
+                <control type="button" id="52008" description="Widget Edge Distance">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31453]</label>
@@ -4185,7 +4185,7 @@
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.20),mysubmenu) + !String.Contains(Container(211).ListItem.Property(widget.20),weather) + !String.IsEqual(Container(211).ListItem.Property(widget.20),system)</visible>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.20),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="20009" description="Widget SortBy">
+                <control type="button" id="52009" description="Widget SortBy">
                     <width>100%</width>
                     <height>66</height>
                     <label>581</label>
@@ -4195,7 +4195,7 @@
                     <align>left</align>
                     <include>DefDialogButtonsGradient</include>
                 </control>
-                <control type="button" id="20010">
+                <control type="button" id="52010">
                     <description>Change widget 1 sort order</description>
                     <width>100%</width>
                     <height>66</height>
@@ -4206,7 +4206,7 @@
                     <label>580</label>
                     <label2>$VAR[LabelSort20]</label2>
                 </control>
-                <control type="button" id="20011">
+                <control type="button" id="52011">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -4219,7 +4219,7 @@
                     <label2>$VAR[AutoScrollTime20]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
                 </control>
-                <control type="button" id="43020" description="ListType">
+                <control type="button" id="52012" description="ListType">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31341]</label>
@@ -4229,7 +4229,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu) + !$EXP[HomeIsCleanMinimal] + !$EXP[HomeIsSpotlight]</visible>
                 </control>
-                <control type="radiobutton" id="43120" description="Prevent reload">
+                <control type="radiobutton" id="52013" description="Prevent reload">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetSortby.20),userpreference)</selected>
                     <width>100%</width>
@@ -4249,7 +4249,7 @@
 
 
             <!-- Widget 21 -->
-            <control type="grouplist" id="21000">
+            <control type="grouplist" id="52100">
                 <onleft>ClearProperty(skinshortcuts-Widget,Home)</onleft>
                 <onleft>SetFocus(7121)</onleft>
                 <onright>ClearProperty(skinshortcuts-Widget,Home)</onright>
@@ -4265,7 +4265,7 @@
                 <itemgap>3</itemgap>
                 <scrolltime>0</scrolltime>
                 <visible>String.IsEqual(Window(Home).Property(skinshortcuts-Widget),21)</visible>
-                <control type="button" id="21001">
+                <control type="button" id="52101">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -4282,7 +4282,7 @@
                     <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetEnable.21),yes)">SetProperty(customValue,)</onclick>
                     <onclick>SendClick(404)</onclick>
                 </control>
-                <control type="button" id="21002" description="Widget">
+                <control type="button" id="52102" description="Widget">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31266] 21</label>
@@ -4294,7 +4294,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <onclick>SendClick(312)</onclick>
                 </control>
-                <control type="button" id="21003" description="Set Custom">
+                <control type="button" id="52103" description="Set Custom">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31474]</label>
@@ -4308,7 +4308,7 @@
                     <onclick>SetProperty(level,21)</onclick>
                     <onclick>SendClick(405)</onclick>
                 </control>
-                <control type="radiobutton" id="21004" description="Widget Fullscreen">
+                <control type="radiobutton" id="52104" description="Widget Fullscreen">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.21),yes) | Skin.HasSetting(homemenu.netflix)</selected>
                     <width>100%</width>
@@ -4324,7 +4324,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>[ $EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets] ] + !Skin.HasSetting(homemenu.netflix)</enable>
                 </control>
-                <control type="button" id="21005" description="Widget Aspect">
+                <control type="button" id="52105" description="Widget Aspect">
                     <width>100%</width>
                     <height>66</height>
                     <label>31261</label>
@@ -4335,7 +4335,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgettarget.21),system) + !String.IsEqual(Container(211).ListItem.Property(widget.21),epg) + !Skin.HasSetting(homemenu.clean.flix)</enable>
                 </control>
-                <control type="radiobutton" id="21006" description="Widget ClearLogo">
+                <control type="radiobutton" id="52106" description="Widget ClearLogo">
                     <radioposx>845</radioposx>
                     <selected>!String.IsEqual(Container(211).ListItem.Property(widgetClearLogoThumb.21),no)</selected>
                     <width>100%</width>
@@ -4352,7 +4352,7 @@
                     <onclick>SendClick(404)</onclick>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.21),epg)</visible>
                 </control>
-                <control type="button" id="21007" description="Widget Aspect Ratio">
+                <control type="button" id="52107" description="Widget Aspect Ratio">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31401]</label>
@@ -4365,7 +4365,7 @@
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widget.21),mysubmenu)</enable>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.21),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="21008" description="Widget Edge Distance">
+                <control type="button" id="52108" description="Widget Edge Distance">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31453]</label>
@@ -4378,7 +4378,7 @@
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.21),mysubmenu) + !String.Contains(Container(211).ListItem.Property(widget.21),weather) + !String.IsEqual(Container(211).ListItem.Property(widget.21),system)</visible>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.21),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="21009" description="Widget SortBy">
+                <control type="button" id="52109" description="Widget SortBy">
                     <width>100%</width>
                     <height>66</height>
                     <label>581</label>
@@ -4388,7 +4388,7 @@
                     <align>left</align>
                     <include>DefDialogButtonsGradient</include>
                 </control>
-                <control type="button" id="21010">
+                <control type="button" id="52110">
                     <description>Change widget 1 sort order</description>
                     <width>100%</width>
                     <height>66</height>
@@ -4399,7 +4399,7 @@
                     <label>580</label>
                     <label2>$VAR[LabelSort21]</label2>
                 </control>
-                <control type="button" id="21011">
+                <control type="button" id="52111">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -4412,7 +4412,7 @@
                     <label2>$VAR[AutoScrollTime21]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
                 </control>
-                <control type="button" id="43021" description="ListType">
+                <control type="button" id="52112" description="ListType">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31341]</label>
@@ -4422,7 +4422,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu) + !$EXP[HomeIsCleanMinimal] + !$EXP[HomeIsSpotlight]</visible>
                 </control>
-                <control type="radiobutton" id="43121" description="Prevent reload">
+                <control type="radiobutton" id="52113" description="Prevent reload">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetSortby.21),userpreference)</selected>
                     <width>100%</width>
@@ -4442,7 +4442,7 @@
 
 
             <!-- Widget 22 -->
-            <control type="grouplist" id="22000">
+            <control type="grouplist" id="52200">
                 <onleft>ClearProperty(skinshortcuts-Widget,Home)</onleft>
                 <onleft>SetFocus(7122)</onleft>
                 <onright>ClearProperty(skinshortcuts-Widget,Home)</onright>
@@ -4458,7 +4458,7 @@
                 <itemgap>3</itemgap>
                 <scrolltime>0</scrolltime>
                 <visible>String.IsEqual(Window(Home).Property(skinshortcuts-Widget),22)</visible>
-                <control type="button" id="22001">
+                <control type="button" id="52201">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -4475,7 +4475,7 @@
                     <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetEnable.22),yes)">SetProperty(customValue,)</onclick>
                     <onclick>SendClick(404)</onclick>
                 </control>
-                <control type="button" id="22002" description="Widget">
+                <control type="button" id="52202" description="Widget">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31266] 22</label>
@@ -4487,7 +4487,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <onclick>SendClick(312)</onclick>
                 </control>
-                <control type="button" id="22003" description="Set Custom">
+                <control type="button" id="52203" description="Set Custom">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31474]</label>
@@ -4501,7 +4501,7 @@
                     <onclick>SetProperty(level,22)</onclick>
                     <onclick>SendClick(405)</onclick>
                 </control>
-                <control type="radiobutton" id="22004" description="Widget Fullscreen">
+                <control type="radiobutton" id="52204" description="Widget Fullscreen">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.22),yes) | Skin.HasSetting(homemenu.netflix)</selected>
                     <width>100%</width>
@@ -4517,7 +4517,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>[ $EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets] ] + !Skin.HasSetting(homemenu.netflix)</enable>
                 </control>
-                <control type="button" id="22005" description="Widget Aspect">
+                <control type="button" id="52205" description="Widget Aspect">
                     <width>100%</width>
                     <height>66</height>
                     <label>31261</label>
@@ -4528,7 +4528,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgettarget.22),system) + !String.IsEqual(Container(211).ListItem.Property(widget.22),epg) + !Skin.HasSetting(homemenu.clean.flix)</enable>
                 </control>
-                <control type="radiobutton" id="22006" description="Widget ClearLogo">
+                <control type="radiobutton" id="52206" description="Widget ClearLogo">
                     <radioposx>845</radioposx>
                     <selected>!String.IsEqual(Container(211).ListItem.Property(widgetClearLogoThumb.22),no)</selected>
                     <width>100%</width>
@@ -4545,7 +4545,7 @@
                     <onclick>SendClick(404)</onclick>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.22),epg)</visible>
                 </control>
-                <control type="button" id="22007" description="Widget Aspect Ratio">
+                <control type="button" id="52207" description="Widget Aspect Ratio">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31401]</label>
@@ -4558,7 +4558,7 @@
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widget.22),mysubmenu)</enable>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.22),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="22008" description="Widget Edge Distance">
+                <control type="button" id="52208" description="Widget Edge Distance">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31453]</label>
@@ -4571,7 +4571,7 @@
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.22),mysubmenu) + !String.Contains(Container(211).ListItem.Property(widget.22),weather) + !String.IsEqual(Container(211).ListItem.Property(widget.22),system)</visible>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.22),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="22009" description="Widget SortBy">
+                <control type="button" id="52209" description="Widget SortBy">
                     <width>100%</width>
                     <height>66</height>
                     <label>581</label>
@@ -4581,7 +4581,7 @@
                     <align>left</align>
                     <include>DefDialogButtonsGradient</include>
                 </control>
-                <control type="button" id="22010">
+                <control type="button" id="52210">
                     <description>Change widget 1 sort order</description>
                     <width>100%</width>
                     <height>66</height>
@@ -4592,7 +4592,7 @@
                     <label>580</label>
                     <label2>$VAR[LabelSort22]</label2>
                 </control>
-                <control type="button" id="22011">
+                <control type="button" id="52211">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -4605,7 +4605,7 @@
                     <label2>$VAR[AutoScrollTime22]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
                 </control>
-                <control type="button" id="43022" description="ListType">
+                <control type="button" id="52212" description="ListType">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31341]</label>
@@ -4615,7 +4615,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu) + !$EXP[HomeIsCleanMinimal] + !$EXP[HomeIsSpotlight]</visible>
                 </control>
-                <control type="radiobutton" id="43122" description="Prevent reload">
+                <control type="radiobutton" id="52213" description="Prevent reload">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetSortby.22),userpreference)</selected>
                     <width>100%</width>
@@ -4635,7 +4635,7 @@
 
 
             <!-- Widget 23 -->
-            <control type="grouplist" id="23000">
+            <control type="grouplist" id="52300">
                 <onleft>ClearProperty(skinshortcuts-Widget,Home)</onleft>
                 <onleft>SetFocus(7123)</onleft>
                 <onright>ClearProperty(skinshortcuts-Widget,Home)</onright>
@@ -4651,7 +4651,7 @@
                 <itemgap>3</itemgap>
                 <scrolltime>0</scrolltime>
                 <visible>String.IsEqual(Window(Home).Property(skinshortcuts-Widget),23)</visible>
-                <control type="button" id="23001">
+                <control type="button" id="52301">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -4668,7 +4668,7 @@
                     <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetEnable.23),yes)">SetProperty(customValue,)</onclick>
                     <onclick>SendClick(404)</onclick>
                 </control>
-                <control type="button" id="23002" description="Widget">
+                <control type="button" id="52302" description="Widget">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31266] 23</label>
@@ -4680,7 +4680,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <onclick>SendClick(312)</onclick>
                 </control>
-                <control type="button" id="23003" description="Set Custom">
+                <control type="button" id="52303" description="Set Custom">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31474]</label>
@@ -4694,7 +4694,7 @@
                     <onclick>SetProperty(level,23)</onclick>
                     <onclick>SendClick(405)</onclick>
                 </control>
-                <control type="radiobutton" id="23004" description="Widget Fullscreen">
+                <control type="radiobutton" id="52304" description="Widget Fullscreen">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.23),yes) | Skin.HasSetting(homemenu.netflix)</selected>
                     <width>100%</width>
@@ -4710,7 +4710,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>[ $EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets] ] + !Skin.HasSetting(homemenu.netflix)</enable>
                 </control>
-                <control type="button" id="23005" description="Widget Aspect">
+                <control type="button" id="52305" description="Widget Aspect">
                     <width>100%</width>
                     <height>66</height>
                     <label>31261</label>
@@ -4721,7 +4721,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgettarget.23),system) + !String.IsEqual(Container(211).ListItem.Property(widget.23),epg) + !Skin.HasSetting(homemenu.clean.flix)</enable>
                 </control>
-                <control type="radiobutton" id="23006" description="Widget ClearLogo">
+                <control type="radiobutton" id="52306" description="Widget ClearLogo">
                     <radioposx>845</radioposx>
                     <selected>!String.IsEqual(Container(211).ListItem.Property(widgetClearLogoThumb.23),no)</selected>
                     <width>100%</width>
@@ -4738,7 +4738,7 @@
                     <onclick>SendClick(404)</onclick>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.23),epg)</visible>
                 </control>
-                <control type="button" id="23007" description="Widget Aspect Ratio">
+                <control type="button" id="52307" description="Widget Aspect Ratio">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31401]</label>
@@ -4751,7 +4751,7 @@
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widget.23),mysubmenu)</enable>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.23),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="23008" description="Widget Edge Distance">
+                <control type="button" id="52308" description="Widget Edge Distance">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31453]</label>
@@ -4764,7 +4764,7 @@
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.23),mysubmenu) + !String.Contains(Container(211).ListItem.Property(widget.23),weather) + !String.IsEqual(Container(211).ListItem.Property(widget.23),system)</visible>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.23),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="23009" description="Widget SortBy">
+                <control type="button" id="52309" description="Widget SortBy">
                     <width>100%</width>
                     <height>66</height>
                     <label>581</label>
@@ -4774,7 +4774,7 @@
                     <align>left</align>
                     <include>DefDialogButtonsGradient</include>
                 </control>
-                <control type="button" id="23010">
+                <control type="button" id="52310">
                     <description>Change widget 1 sort order</description>
                     <width>100%</width>
                     <height>66</height>
@@ -4785,7 +4785,7 @@
                     <label>580</label>
                     <label2>$VAR[LabelSort23]</label2>
                 </control>
-                <control type="button" id="23011">
+                <control type="button" id="52311">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -4798,7 +4798,7 @@
                     <label2>$VAR[AutoScrollTime23]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
                 </control>
-                <control type="button" id="43023" description="ListType">
+                <control type="button" id="52312" description="ListType">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31341]</label>
@@ -4808,7 +4808,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu) + !$EXP[HomeIsCleanMinimal] + !$EXP[HomeIsSpotlight]</visible>
                 </control>
-                <control type="radiobutton" id="43123" description="Prevent reload">
+                <control type="radiobutton" id="52313" description="Prevent reload">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetSortby.23),userpreference)</selected>
                     <width>100%</width>
@@ -4828,7 +4828,7 @@
 
 
             <!-- Widget 24 -->
-            <control type="grouplist" id="24000">
+            <control type="grouplist" id="52400">
                 <onleft>ClearProperty(skinshortcuts-Widget,Home)</onleft>
                 <onleft>SetFocus(7124)</onleft>
                 <onright>ClearProperty(skinshortcuts-Widget,Home)</onright>
@@ -4844,7 +4844,7 @@
                 <itemgap>3</itemgap>
                 <scrolltime>0</scrolltime>
                 <visible>String.IsEqual(Window(Home).Property(skinshortcuts-Widget),24)</visible>
-                <control type="button" id="24001">
+                <control type="button" id="52401">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -4861,7 +4861,7 @@
                     <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetEnable.24),yes)">SetProperty(customValue,)</onclick>
                     <onclick>SendClick(404)</onclick>
                 </control>
-                <control type="button" id="24002" description="Widget">
+                <control type="button" id="52402" description="Widget">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31266] 24</label>
@@ -4873,7 +4873,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <onclick>SendClick(312)</onclick>
                 </control>
-                <control type="button" id="24003" description="Set Custom">
+                <control type="button" id="52403" description="Set Custom">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31474]</label>
@@ -4887,7 +4887,7 @@
                     <onclick>SetProperty(level,24)</onclick>
                     <onclick>SendClick(405)</onclick>
                 </control>
-                <control type="radiobutton" id="24004" description="Widget Fullscreen">
+                <control type="radiobutton" id="52404" description="Widget Fullscreen">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.24),yes) | Skin.HasSetting(homemenu.netflix)</selected>
                     <width>100%</width>
@@ -4903,7 +4903,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>[ $EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets] ] + !Skin.HasSetting(homemenu.netflix)</enable>
                 </control>
-                <control type="button" id="24005" description="Widget Aspect">
+                <control type="button" id="52405" description="Widget Aspect">
                     <width>100%</width>
                     <height>66</height>
                     <label>31261</label>
@@ -4914,7 +4914,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgettarget.24),system) + !String.IsEqual(Container(211).ListItem.Property(widget.24),epg) + !Skin.HasSetting(homemenu.clean.flix)</enable>
                 </control>
-                <control type="radiobutton" id="24006" description="Widget ClearLogo">
+                <control type="radiobutton" id="52406" description="Widget ClearLogo">
                     <radioposx>845</radioposx>
                     <selected>!String.IsEqual(Container(211).ListItem.Property(widgetClearLogoThumb.24),no)</selected>
                     <width>100%</width>
@@ -4931,7 +4931,7 @@
                     <onclick>SendClick(404)</onclick>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.24),epg)</visible>
                 </control>
-                <control type="button" id="24007" description="Widget Aspect Ratio">
+                <control type="button" id="52407" description="Widget Aspect Ratio">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31401]</label>
@@ -4944,7 +4944,7 @@
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widget.24),mysubmenu)</enable>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.24),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="24008" description="Widget Edge Distance">
+                <control type="button" id="52408" description="Widget Edge Distance">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31453]</label>
@@ -4957,7 +4957,7 @@
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.24),mysubmenu) + !String.Contains(Container(211).ListItem.Property(widget.24),weather) + !String.IsEqual(Container(211).ListItem.Property(widget.24),system)</visible>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.24),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="24009" description="Widget SortBy">
+                <control type="button" id="52409" description="Widget SortBy">
                     <width>100%</width>
                     <height>66</height>
                     <label>581</label>
@@ -4967,7 +4967,7 @@
                     <align>left</align>
                     <include>DefDialogButtonsGradient</include>
                 </control>
-                <control type="button" id="24010">
+                <control type="button" id="52410">
                     <description>Change widget 1 sort order</description>
                     <width>100%</width>
                     <height>66</height>
@@ -4978,7 +4978,7 @@
                     <label>580</label>
                     <label2>$VAR[LabelSort24]</label2>
                 </control>
-                <control type="button" id="24011">
+                <control type="button" id="52411">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -4991,7 +4991,7 @@
                     <label2>$VAR[AutoScrollTime24]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
                 </control>
-                <control type="button" id="43024" description="ListType">
+                <control type="button" id="52412" description="ListType">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31341]</label>
@@ -5001,7 +5001,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu) + !$EXP[HomeIsCleanMinimal] + !$EXP[HomeIsSpotlight]</visible>
                 </control>
-                <control type="radiobutton" id="43124" description="Prevent reload">
+                <control type="radiobutton" id="52413" description="Prevent reload">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetSortby.24),userpreference)</selected>
                     <width>100%</width>
@@ -5021,7 +5021,7 @@
 
 
             <!-- Widget 25 -->
-            <control type="grouplist" id="25000">
+            <control type="grouplist" id="52500">
                 <onleft>ClearProperty(skinshortcuts-Widget,Home)</onleft>
                 <onleft>SetFocus(7125)</onleft>
                 <onright>ClearProperty(skinshortcuts-Widget,Home)</onright>
@@ -5037,7 +5037,7 @@
                 <itemgap>3</itemgap>
                 <scrolltime>0</scrolltime>
                 <visible>String.IsEqual(Window(Home).Property(skinshortcuts-Widget),25)</visible>
-                <control type="button" id="25001">
+                <control type="button" id="52501">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -5054,7 +5054,7 @@
                     <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetEnable.25),yes)">SetProperty(customValue,)</onclick>
                     <onclick>SendClick(404)</onclick>
                 </control>
-                <control type="button" id="25002" description="Widget">
+                <control type="button" id="52502" description="Widget">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31266] 25</label>
@@ -5066,7 +5066,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <onclick>SendClick(312)</onclick>
                 </control>
-                <control type="button" id="25003" description="Set Custom">
+                <control type="button" id="52503" description="Set Custom">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31474]</label>
@@ -5080,7 +5080,7 @@
                     <onclick>SetProperty(level,25)</onclick>
                     <onclick>SendClick(405)</onclick>
                 </control>
-                <control type="radiobutton" id="25004" description="Widget Fullscreen">
+                <control type="radiobutton" id="52504" description="Widget Fullscreen">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.25),yes) | Skin.HasSetting(homemenu.netflix)</selected>
                     <width>100%</width>
@@ -5096,7 +5096,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>[ $EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets] ] + !Skin.HasSetting(homemenu.netflix)</enable>
                 </control>
-                <control type="button" id="25005" description="Widget Aspect">
+                <control type="button" id="52505" description="Widget Aspect">
                     <width>100%</width>
                     <height>66</height>
                     <label>31261</label>
@@ -5107,7 +5107,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgettarget.25),system) + !String.IsEqual(Container(211).ListItem.Property(widget.25),epg) + !Skin.HasSetting(homemenu.clean.flix)</enable>
                 </control>
-                <control type="radiobutton" id="25006" description="Widget ClearLogo">
+                <control type="radiobutton" id="52506" description="Widget ClearLogo">
                     <radioposx>845</radioposx>
                     <selected>!String.IsEqual(Container(211).ListItem.Property(widgetClearLogoThumb.25),no)</selected>
                     <width>100%</width>
@@ -5124,7 +5124,7 @@
                     <onclick>SendClick(404)</onclick>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.25),epg)</visible>
                 </control>
-                <control type="button" id="25007" description="Widget Aspect Ratio">
+                <control type="button" id="52507" description="Widget Aspect Ratio">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31401]</label>
@@ -5137,7 +5137,7 @@
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widget.25),mysubmenu)</enable>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.25),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="25008" description="Widget Edge Distance">
+                <control type="button" id="52508" description="Widget Edge Distance">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31297]$LOCALIZE[31453]</label>
@@ -5150,7 +5150,7 @@
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.25),mysubmenu) + !String.Contains(Container(211).ListItem.Property(widget.25),weather) + !String.IsEqual(Container(211).ListItem.Property(widget.25),system)</visible>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(widget.25),epg) + !Skin.HasSetting(homemenu.clean.flix)</visible>
                 </control>
-                <control type="button" id="25009" description="Widget SortBy">
+                <control type="button" id="52509" description="Widget SortBy">
                     <width>100%</width>
                     <height>66</height>
                     <label>581</label>
@@ -5160,7 +5160,7 @@
                     <align>left</align>
                     <include>DefDialogButtonsGradient</include>
                 </control>
-                <control type="button" id="25010">
+                <control type="button" id="52510">
                     <description>Change widget 1 sort order</description>
                     <width>100%</width>
                     <height>66</height>
@@ -5171,7 +5171,7 @@
                     <label>580</label>
                     <label2>$VAR[LabelSort25]</label2>
                 </control>
-                <control type="button" id="25011">
+                <control type="button" id="52511">
                     <description>Enable</description>
                     <width>100%</width>
                     <height>66</height>
@@ -5184,7 +5184,7 @@
                     <label2>$VAR[AutoScrollTime25]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
                 </control>
-                <control type="button" id="43025" description="ListType">
+                <control type="button" id="52512" description="ListType">
                     <width>100%</width>
                     <height>66</height>
                     <label>$LOCALIZE[31341]</label>
@@ -5194,7 +5194,7 @@
                     <include>DefDialogButtonsGradient</include>
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu) + !$EXP[HomeIsCleanMinimal] + !$EXP[HomeIsSpotlight]</visible>
                 </control>
-                <control type="radiobutton" id="43125" description="Prevent reload">
+                <control type="radiobutton" id="52513" description="Prevent reload">
                     <radioposx>845</radioposx>
                     <selected>String.IsEqual(Container(211).ListItem.Property(widgetSortby.25),userpreference)</selected>
                     <width>100%</width>
