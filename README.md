@@ -4,6 +4,11 @@
 
 For more information and support please visit the [Kodi Community Forum](https://forum.kodi.tv/showthread.php?tid=382650)
 
+## In this version
+
+I modified this skin to increase the number of widgets to 25.
+Codex (openai) help me a lot for this.
+
 ## Installation 
 
 Install via the Martian Add-on Repository to enable automatic updates. 
