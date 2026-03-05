@@ -11,20 +11,14 @@ Codex (openai) help me a lot for this.
 
 ## Installation 
 
-Install via the Martian Add-on Repository to enable automatic updates. 
-
-
-Kodi File Manager Source:
-https://martian89.github.io/repository.martian/
-
 Direct ZIP Install:
-https://martian89.github.io/repository.martian/repository.martian-1.0.0.zip
+https://github.com/Therand90/skin.arctic.zephyr.martian.25widgets/releases/download/0.1/skin.arctic.zephyr.martian.25widgets-0.1.zip
 
 Instructions:
 
 1. Enable "Unknown Sources" in Kodi Settings > System > Add-ons
 2. Install the repository using either the zip or file manager source linked above
-3. Install the latest version of Arctic: Zephyr (martian) from this repository
+3. Install the latest version of Arctic: Zephyr (martian) +25widgets from this repository
 
 ## License 
 
