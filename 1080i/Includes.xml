@@ -82,6 +82,25 @@
     <expression name="Widget4Enabled">String.IsEqual(Container(300).ListItem.Property(widgetEnable.4),yes)</expression>
     <expression name="Widget5Enabled">String.IsEqual(Container(300).ListItem.Property(widgetEnable.5),yes)</expression>
     <expression name="Widget6Enabled">String.IsEqual(Container(300).ListItem.Property(widgetEnable.6),yes)</expression>
+    <expression name="Widget7Enabled">String.IsEqual(Container(300).ListItem.Property(widgetEnable.7),yes)</expression>
+    <expression name="Widget8Enabled">String.IsEqual(Container(300).ListItem.Property(widgetEnable.8),yes)</expression>
+    <expression name="Widget9Enabled">String.IsEqual(Container(300).ListItem.Property(widgetEnable.9),yes)</expression>
+    <expression name="Widget10Enabled">String.IsEqual(Container(300).ListItem.Property(widgetEnable.10),yes)</expression>
+    <expression name="Widget11Enabled">String.IsEqual(Container(300).ListItem.Property(widgetEnable.11),yes)</expression>
+    <expression name="Widget12Enabled">String.IsEqual(Container(300).ListItem.Property(widgetEnable.12),yes)</expression>
+    <expression name="Widget13Enabled">String.IsEqual(Container(300).ListItem.Property(widgetEnable.13),yes)</expression>
+    <expression name="Widget14Enabled">String.IsEqual(Container(300).ListItem.Property(widgetEnable.14),yes)</expression>
+    <expression name="Widget15Enabled">String.IsEqual(Container(300).ListItem.Property(widgetEnable.15),yes)</expression>
+    <expression name="Widget16Enabled">String.IsEqual(Container(300).ListItem.Property(widgetEnable.16),yes)</expression>
+    <expression name="Widget17Enabled">String.IsEqual(Container(300).ListItem.Property(widgetEnable.17),yes)</expression>
+    <expression name="Widget18Enabled">String.IsEqual(Container(300).ListItem.Property(widgetEnable.18),yes)</expression>
+    <expression name="Widget19Enabled">String.IsEqual(Container(300).ListItem.Property(widgetEnable.19),yes)</expression>
+    <expression name="Widget20Enabled">String.IsEqual(Container(300).ListItem.Property(widgetEnable.20),yes)</expression>
+    <expression name="Widget21Enabled">String.IsEqual(Container(300).ListItem.Property(widgetEnable.21),yes)</expression>
+    <expression name="Widget22Enabled">String.IsEqual(Container(300).ListItem.Property(widgetEnable.22),yes)</expression>
+    <expression name="Widget23Enabled">String.IsEqual(Container(300).ListItem.Property(widgetEnable.23),yes)</expression>
+    <expression name="Widget24Enabled">String.IsEqual(Container(300).ListItem.Property(widgetEnable.24),yes)</expression>
+    <expression name="Widget25Enabled">String.IsEqual(Container(300).ListItem.Property(widgetEnable.25),yes)</expression>
     <expression name="HomeShowHeader">Skin.HasSetting(home.showheader) + !Skin.HasSetting(home.vertical.widgets)</expression>
     
     <expression name="InfoDialogsActive">Window.IsActive(DialogVideoInfo.xml) | Window.IsActive(DialogMusicInfo.xml) | Window.IsActive(DialogAddonInfo.xml) | Window.IsActive(DialogPVRInfo.xml)</expression>
@@ -2027,6 +2046,62 @@
 
         <!-- Widget 6 -->
         <include>skinshortcuts-template-widget-vertical.6</include>
+        <!-- Widget 7 -->
+        <include>skinshortcuts-template-widget-vertical.7</include>
+
+        <!-- Widget 8 -->
+        <include>skinshortcuts-template-widget-vertical.8</include>
+
+        <!-- Widget 9 -->
+        <include>skinshortcuts-template-widget-vertical.9</include>
+
+        <!-- Widget 10 -->
+        <include>skinshortcuts-template-widget-vertical.10</include>
+
+        <!-- Widget 11 -->
+        <include>skinshortcuts-template-widget-vertical.11</include>
+
+        <!-- Widget 12 -->
+        <include>skinshortcuts-template-widget-vertical.12</include>
+
+        <!-- Widget 13 -->
+        <include>skinshortcuts-template-widget-vertical.13</include>
+
+        <!-- Widget 14 -->
+        <include>skinshortcuts-template-widget-vertical.14</include>
+
+        <!-- Widget 15 -->
+        <include>skinshortcuts-template-widget-vertical.15</include>
+
+        <!-- Widget 16 -->
+        <include>skinshortcuts-template-widget-vertical.16</include>
+
+        <!-- Widget 17 -->
+        <include>skinshortcuts-template-widget-vertical.17</include>
+
+        <!-- Widget 18 -->
+        <include>skinshortcuts-template-widget-vertical.18</include>
+
+        <!-- Widget 19 -->
+        <include>skinshortcuts-template-widget-vertical.19</include>
+
+        <!-- Widget 20 -->
+        <include>skinshortcuts-template-widget-vertical.20</include>
+
+        <!-- Widget 21 -->
+        <include>skinshortcuts-template-widget-vertical.21</include>
+
+        <!-- Widget 22 -->
+        <include>skinshortcuts-template-widget-vertical.22</include>
+
+        <!-- Widget 23 -->
+        <include>skinshortcuts-template-widget-vertical.23</include>
+
+        <!-- Widget 24 -->
+        <include>skinshortcuts-template-widget-vertical.24</include>
+
+        <!-- Widget 25 -->
+        <include>skinshortcuts-template-widget-vertical.25</include>
     </include>
 
     <include name="ResetViewtypes">
